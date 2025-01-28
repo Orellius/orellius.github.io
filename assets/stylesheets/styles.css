@@ -2,10 +2,16 @@ body {
   background-color: #0d1117;
   position: relative;
   overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
 body::before {
   content: "";
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -13,4 +19,10 @@ body::before {
   background-image: linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
   background-size: 40px 40px;
   pointer-events: none;
+}
+
+@media (max-width: 768px) {
+  body::before {
+    background-size: 20px 20px;
+  }
 }/*# sourceMappingURL=styles.css.map */
