@@ -36,13 +36,16 @@ body {
   z-index: 1;
 
   a {
-    color: white;
+    color: #abb2bf;
+    text-shadow: none;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
     text-decoration: none;
     margin: 0 10px;
     font-size: 16px;
+    
 
     &:hover {
-      color: #ddd;
+      color: #ffffff;
     }
   }
 
