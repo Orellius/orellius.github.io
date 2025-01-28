@@ -2,6 +2,7 @@ $font-stack: Helvetica, sans-serif;
 $primary-color: #3e4e79;
 
 body {
-  font: 100% $font-stack;
-  color: $primary-color;
+  font: $font-stack;
+  background-color: $primary-color;
+  color: #fff;
 }
