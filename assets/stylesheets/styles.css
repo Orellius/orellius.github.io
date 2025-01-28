@@ -5,6 +5,9 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  color: #abb2bf;
+  text-shadow: none;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
 }
 
 .grid-overlay {
@@ -55,6 +58,43 @@ body {
   align-items: center;
   text-align: center;
 }
+.container .content {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.container .content h2 {
+  width: 100%;
+  margin-bottom: 20px;
+  font-size: 2.5em;
+  color: #fff;
+}
+.container .content .box {
+  background-color: #070a0d;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  margin: 10px;
+  flex: 1 1 calc(50% - 20px);
+  box-sizing: border-box;
+  text-align: left;
+}
+.container .content .box h3 {
+  font-size: 1.5em;
+  color: #fff;
+  margin-bottom: 10px;
+}
+.container .content .box p {
+  font-size: 1em;
+  color: #abb2bf;
+  margin-bottom: 15px;
+}
+.container .content .box img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
 
 @media (max-width: 768px) {
   .grid-overlay {
@@ -66,5 +106,11 @@ body {
   }
   .navbar a {
     margin: 5px 0;
+  }
+  .container .content {
+    flex-direction: column;
+  }
+  .container .content .box {
+    flex: 1 1 100%;
   }
 }/*# sourceMappingURL=styles.css.map */

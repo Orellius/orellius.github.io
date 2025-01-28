@@ -9,6 +9,9 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  color: #abb2bf;
+  text-shadow: none;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
 }
 
 .grid-overlay {
@@ -63,6 +66,49 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
+
+  .content {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    h2 {
+      width: 100%;
+      margin-bottom: 20px;
+      font-size: 2.5em;
+      color: #fff;
+    }
+
+    .box {
+      background-color: darken($background-color, 3%);
+      border: 1px solid $grid-color;
+      padding: 20px;
+      margin: 10px;
+      flex: 1 1 calc(50% - 20px);
+      box-sizing: border-box;
+      text-align: left;
+
+      h3 {
+        font-size: 1.5em;
+        color: #fff;
+        margin-bottom: 10px;
+      }
+
+      p {
+        font-size: 1em;
+        color: #abb2bf;
+        margin-bottom: 15px;
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+      }
+    }
+  }
 }
 
 @media (max-width: 768px) {
@@ -77,6 +123,16 @@ body {
 
     a {
       margin: 5px 0;
+    }
+  }
+
+  .container {
+    .content {
+      flex-direction: column;
+
+      .box {
+        flex: 1 1 100%;
+      }
     }
   }
 }
