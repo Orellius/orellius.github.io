@@ -2,8 +2,6 @@ body {
   background-color: #0d1117;
   position: relative;
   overflow: hidden;
-  height: 100vh;
-  width: 100vw;
   display: flex;
   align-items: center;
   justify-content: center;
