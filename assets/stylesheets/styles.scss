@@ -9,9 +9,6 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  color: #abb2bf;
-  text-shadow: none;
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
 }
 
 .grid-overlay {
@@ -39,19 +36,22 @@ body {
   z-index: 1;
 
   a {
-    color: white;
+    color: #abb2bf;
+    text-shadow: none;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
     text-decoration: none;
     margin: 0 10px;
     font-size: 16px;
 
     &:hover {
-      color: #ddd;
+      color: #ffffff;
     }
   }
 
   .logo {
     font-size: 20px;
     font-weight: bold;
+    color: #fff;
   }
 }
 
