@@ -9,6 +9,9 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  color: #abb2bf;
+  text-shadow: none;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
 }
 
 .grid-overlay {
@@ -36,24 +39,30 @@ body {
   z-index: 1;
 
   a {
-    color: #abb2bf;
-    text-shadow: none;
-    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
+    color: white;
     text-decoration: none;
     margin: 0 10px;
     font-size: 16px;
-    
 
     &:hover {
-      color: #ffffff;
+      color: #ddd;
     }
   }
 
   .logo {
     font-size: 20px;
     font-weight: bold;
-    color: #fff;
   }
+}
+
+.container {
+  padding: 60px 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 @media (max-width: 768px) {
