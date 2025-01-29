@@ -47,6 +47,20 @@ body {
     color: #fff;
   }
 
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+
+    span {
+      width: 25px;
+      height: 3px;
+      background-color: #fff;
+      margin: 4px 0;
+      transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+  }
+
   .nav-categories {
     display: flex;
     align-items: center;
@@ -195,15 +209,27 @@ html {
   }
 
   .navbar {
-    flex-direction: column;
-    align-items: flex-start;
+    .hamburger {
+      display: flex;
+    }
 
     .nav-categories {
+      display: none;
       flex-direction: column;
-      align-items: flex-start;
+      width: 100%;
+      background-color: darken($background-color, 5%);
+      position: absolute;
+      top: 60px;
+      left: 0;
+      padding: 10px 0;
 
       a {
-        margin: 5px 0;
+        margin: 10px 0;
+        text-align: center;
+      }
+
+      &.active {
+        display: flex;
       }
     }
   }

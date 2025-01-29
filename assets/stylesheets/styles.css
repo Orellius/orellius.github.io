@@ -40,6 +40,18 @@ body {
   font-weight: bold;
   color: #fff;
 }
+.navbar .hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+.navbar .hamburger span {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 4px 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
 .navbar .nav-categories {
   display: flex;
   align-items: center;
@@ -171,16 +183,25 @@ html {
   .grid-overlay {
     background-size: 20px 20px;
   }
-  .navbar {
-    flex-direction: column;
-    align-items: flex-start;
+  .navbar .hamburger {
+    display: flex;
   }
   .navbar .nav-categories {
+    display: none;
     flex-direction: column;
-    align-items: flex-start;
+    width: 100%;
+    background-color: #040507;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    padding: 10px 0;
   }
   .navbar .nav-categories a {
-    margin: 5px 0;
+    margin: 10px 0;
+    text-align: center;
+  }
+  .navbar .nav-categories.active {
+    display: flex;
   }
   .container .content {
     flex-direction: column;
