@@ -29,8 +29,11 @@ body {
   align-items: center;
   background-color: #040507;
   padding: 10px 20px;
-  position: relative;
-  z-index: 1;
+  position: fixed; /* Make navbar stick to the top */
+  top: 0; /* Position at the top */
+  left: 0; /* Align to the left */
+  width: 100%; /* Full width */
+  z-index: 1000; /* Ensure navbar stays above other content */
 }
 .navbar a {
   color: #abb2bf;
@@ -50,7 +53,7 @@ body {
 }
 
 .container {
-  padding: 60px 20px;
+  padding: 80px 20px 20px; /* Add top padding to account for fixed navbar */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
