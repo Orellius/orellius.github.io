@@ -4,14 +4,14 @@ $grid-size: 40px;
 
 body {
   background-color: $background-color;
-  position: relative;
-  overflow-y: scroll;
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   color: #abb2bf;
   text-shadow: none;
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
 }
 
 .grid-overlay {
@@ -50,7 +50,6 @@ body {
   .nav-categories {
     display: flex;
     align-items: center;
-    margin: 0 32px;
 
     a {
       color: #abb2bf;
@@ -89,6 +88,21 @@ body {
   }
 }
 
+.container {
+  padding: 100px 20px 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  scroll-snap-align: start;
+}
+
+html {
+  scroll-snap-type: y mandatory;
+}
+
 .scroll-down-indicator {
   position: fixed;
   bottom: 20px;
@@ -120,59 +134,6 @@ body {
   }
   60% {
     transform: translateY(-5px) rotate(45deg);
-  }
-}
-
-.container {
-  padding: 80px 20px 20px;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-
-  .content {
-    width: 100%;
-    max-width: 1200px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-
-    h2 {
-      width: 100%;
-      margin-bottom: 20px;
-      font-size: 2.5em;
-      color: #fff;
-    }
-
-    .box {
-      background-color: darken($background-color, 3%);
-      border: 1px solid $grid-color;
-      padding: 20px;
-      margin: 10px;
-      flex: 1 1 calc(50% - 20px);
-      box-sizing: border-box;
-      text-align: left;
-
-      h3 {
-        font-size: 1.5em;
-        color: #fff;
-        margin-bottom: 10px;
-      }
-
-      p {
-        font-size: 1em;
-        color: #abb2bf;
-        margin-bottom: 15px;
-      }
-
-      img {
-        width: 100%;
-        height: auto;
-        border-radius: 5px;
-      }
-    }
   }
 }
 
