@@ -86,6 +86,50 @@ body {
   text-align: center;
   scroll-snap-align: start;
 }
+.container .content {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.container .content h2 {
+  width: 100%;
+  margin-bottom: 20px;
+  font-size: 2.5em;
+  color: #fff;
+}
+.container .content .box {
+  background-color: #070a0d;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  margin: 10px;
+  flex: 1 1 calc(50% - 20px);
+  box-sizing: border-box;
+  text-align: left;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.container .content .box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.container .content .box h3 {
+  font-size: 1.5em;
+  color: #fff;
+  margin-bottom: 10px;
+}
+.container .content .box p {
+  font-size: 1em;
+  color: #abb2bf;
+  margin-bottom: 15px;
+}
+.container .content .box img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
 
 html {
   scroll-snap-type: y mandatory;
