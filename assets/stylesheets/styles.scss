@@ -5,7 +5,7 @@ $grid-size: 40px;
 body {
   background-color: $background-color;
   position: relative;
-  overflow: hidden;
+  overflow-y: scroll;
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
