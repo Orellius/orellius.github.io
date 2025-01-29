@@ -43,6 +43,7 @@ body {
 .navbar .nav-categories {
   display: flex;
   align-items: center;
+  margin: 15px;
 }
 .navbar .nav-categories a {
   color: #abb2bf;
